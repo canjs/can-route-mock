@@ -1,6 +1,6 @@
 {
   "name": "can-route-mock",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "a fake url for routing",
   "homepage": "http://canjs.com",
   "repository": {

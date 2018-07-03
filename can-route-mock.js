@@ -9,7 +9,19 @@ canReflect.assignMap(MockRoute.prototype,{
     querySeparator: "&",
     // don't greedily match slashes in routing rules
     matchSlashes: false,
-    root: "#!"
+    root: "#!",
+    get: function(){
+        return this.value;
+    },
+    set: function(newVal){
+        return this.value = newVal;
+    },
+    on: function(handler){
+        canReflect.onValue(this, handler);
+    },
+    off: function(handler){
+        canReflect.offValue(this, handler);
+    }
 });
 
 Object.defineProperty(MockRoute.prototype,"value",{

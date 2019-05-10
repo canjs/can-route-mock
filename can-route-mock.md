@@ -1,6 +1,7 @@
 @module {RouteMock} can-route-mock
 @parent can-routing
 @collection can-ecosystem
+@package ./package.json
 
 @description Simulate routing without having to change the URL.
 
